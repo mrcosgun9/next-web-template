@@ -5,11 +5,11 @@ function FullHeader() {
   return (
     <>
       <div className='full-header'>
-        <div className='w-4/5 mx-auto flex justify-between py-3'>
+        <div className='container mx-auto flex justify-between py-3'>
           <div>
-            LOGO
+            <Link href="/" className='logo'>LOGO</Link>
           </div>
-          <div>
+          <div className='full-header-menu'>
             <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -22,8 +22,18 @@ function FullHeader() {
               </li>
             </ul>
           </div>
-          <div>
-            SM
+          <div className='full-header-sosial-media'>
+            <ul>
+              <li>
+                f
+              </li>
+              <li>
+                t
+              </li>
+              <li>
+                y
+              </li>
+            </ul>
           </div>
         </div>
       </div>

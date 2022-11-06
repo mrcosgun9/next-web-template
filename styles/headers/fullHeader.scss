@@ -1,0 +1,16 @@
+.full-header {
+  @apply w-full bg-white;
+  .logo {
+    @apply font-bold;
+  }
+  .full-header-menu {
+    ul {
+      @apply flex gap-4 font-bold;
+    }
+  }
+  .full-header-sosial-media {
+    ul {
+      @apply flex gap-4 font-bold;
+    }
+  }
+}
