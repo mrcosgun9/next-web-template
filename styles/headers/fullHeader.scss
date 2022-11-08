@@ -1,5 +1,5 @@
 .full-header {
-  @apply w-full bg-white;
+  @apply w-full bg-white absolute top-0 z-50;
   .logo {
     @apply font-bold;
   }
