@@ -5,7 +5,10 @@ import FullSlider from '../components/sliders/FullSlider'
 export default function Home() {
   return (
     <>
-      <FullSlider />
+      <div className='h-screen bg-blue-600'>
+        <FullSlider />
+      </div>
+      {/* <FullSlider /> */}
     </>
   )
 }
