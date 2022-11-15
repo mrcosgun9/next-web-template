@@ -1,5 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link'
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Menu2 } from 'tabler-icons-react';
 import SocialMedia from '../elements/SocialMedia';
 function FullHeader() {
@@ -12,12 +13,28 @@ function FullHeader() {
       <div className='full-header'>
         <div className='full-header-container'>
           <div className='full-header-first'>
-            <Link href="/" className='logo'>LOGO</Link>
+            <div className='logo'>
+              <Link href="/">
+                <Image src={'/logo.png'} alt={'OGB Global'} fill sizes='100vw' />
+              </Link>
+            </div>
+
           </div>
           <div className='full-header-menu'>
             <ul>
               <li>
                 <Link href="/">Home</Link>
+                <ul>
+                  <li>
+                    <Link href="/">Menü 1</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Menü 2</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Menü 3</Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link href="/">About Us</Link>

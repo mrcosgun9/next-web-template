@@ -1,17 +1,36 @@
 .full-header {
   @apply w-full bg-white bg-opacity-80 relative md:absolute top-0 z-50 px-5 md:px-0 shadow-md;
   .full-header-container {
-    @apply container mx-auto flex justify-between align-middle items-center py-5;
+    @apply container mx-auto flex justify-between align-middle items-center py-2;
     .full-header-first {
       @apply w-1/6;
       .logo {
-        @apply font-bold;
+        @apply w-28 h-11 relative;
       }
     }
     .full-header-menu {
       @apply w-4/6;
       ul {
-        @apply hidden md:flex gap-4;
+        @apply hidden md:flex gap-6;
+        li {
+          @apply relative font-bold text-ogb-200;
+          ul {
+            @apply absolute block w-40 py-1 bg-white shadow mt-3 border-t-2 border-ogb-100 opacity-0;
+            visibility: hidden;
+            transition: all ease-in-out 0.2s;
+            transform: translateY(60px);
+            li {
+              @apply w-full block py-1 px-2 text-sm border-b border-gray-100 last:border-0 hover:bg-blue-50;
+            }
+          }
+          &:hover {
+            ul {
+              @apply opacity-100;
+              visibility: visible;
+              transform: translateY(-10px);
+            }
+          }
+        }
       }
     }
     .full-header-sosial-media {
@@ -23,7 +42,7 @@
   }
 }
 .header-mobile-menu-container {
-  @apply fixed -right-full text-right w-4/5 bg-white h-screen py-2 px-3;
+  @apply fixed -right-full text-right w-4/5 bg-white h-screen py-2 px-3 z-50;
   transition: all 0.2s;
 }
 .header-mobile-menu-container.active {

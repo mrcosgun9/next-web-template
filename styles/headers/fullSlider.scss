@@ -1,0 +1,53 @@
+.slider-item {
+  @apply w-full h-screen bg-cover flex align-middle items-center justify-center;
+  .slider-content {
+    @apply container h-96 flex flex-col justify-center md:justify-end items-center md:items-start text-white;
+    label,
+    h1,
+    p,
+    button {
+      opacity: 0;
+    }
+
+    label {
+      @apply font-black text-5xl text-ogb-300 mb-2;
+      transform: translate(0, 16vh);
+      transition: all ease-in-out 0.8s;
+    }
+    h1 {
+      @apply text-6xl  font-semibold mb-3;
+      transform: translate(0, 16vh);
+      transition: all ease-in-out 0.9s;
+    }
+    p {
+      @apply text-xl mb-4 text-center md:text-left;
+      transform: translate(0, 16vh);
+      transition: all ease-in-out 1s;
+    }
+    button {
+      transform: translate(0, 16vh);
+      transition: all ease-in-out 1.2s;
+
+      @apply bg-ogb-200 text-white px-6 py-4 hover:bg-white hover:bg-opacity-50 font-bold hover:text-ogb-200 border-2 border-ogb-200;
+    }
+  }
+}
+.swiper-slide-active {
+  .slider-content {
+    opacity: 1;
+    label,
+    h1,
+    p,
+    button {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  @apply bg-white rounded-full w-10 h-10 #{!important};
+  &:after {
+    @apply text-base #{!important};
+  }
+}
