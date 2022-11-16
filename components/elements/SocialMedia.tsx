@@ -1,17 +1,17 @@
 import React from 'react'
+import { BrandFacebook, BrandLinkedin } from 'tabler-icons-react'
 
 function SocialMedia() {
   return (
     <ul className='flex gap-2'>
       <li>
-        f
+
+        <BrandFacebook />
       </li>
       <li>
-        t
+        <BrandLinkedin />
       </li>
-      <li>
-        y
-      </li>
+
     </ul>
   )
 }

@@ -1,0 +1,9 @@
+.form-input {
+  label {
+    @apply text-white;
+  }
+  input,
+  textarea {
+    @apply rounded-none border-0 py-5 px-4;
+  }
+}

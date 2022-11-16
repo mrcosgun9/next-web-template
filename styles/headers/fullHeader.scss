@@ -1,5 +1,5 @@
 .full-header {
-  @apply w-full bg-white bg-opacity-80 relative md:absolute top-0 z-50 px-5 md:px-0 shadow-md;
+  @apply w-full bg-white bg-opacity-80 relative md:absolute top-0 z-50 px-5 md:px-0 shadow-md py-2;
   .full-header-container {
     @apply container mx-auto flex justify-between align-middle items-center py-2;
     .full-header-first {
@@ -40,6 +40,9 @@
       @apply block md:hidden cursor-pointer;
     }
   }
+}
+.full-header-fixed {
+  @apply fixed shadow-lg  bg-opacity-100;
 }
 .header-mobile-menu-container {
   @apply fixed -right-full text-right w-4/5 bg-white h-screen py-2 px-3 z-50;

@@ -1,0 +1,21 @@
+.link {
+  @apply flex justify-start align-middle items-center w-full;
+  svg {
+    @apply ml-1 block w-4 h-4 text-white;
+    transition: all ease-in-out 0.2s;
+  }
+  &:hover {
+    svg {
+      @apply ml-3;
+    }
+  }
+}
+.link-white {
+  @apply text-white;
+}
+.link-primary {
+  @apply text-ogb-200;
+}
+.primary-button {
+  @apply bg-blue-600;
+}

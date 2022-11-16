@@ -1,19 +1,36 @@
 import Image from 'next/image';
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Menu2 } from 'tabler-icons-react';
 import SocialMedia from '../elements/SocialMedia';
 function FullHeader() {
   const [showMobile, setShowMobile] = useState<boolean>(false);
+  const [animateHeader, setAnimateHeader] = useState(false);
+  useEffect(() => {
+    const listener = () => {
+      if (window.scrollY > 140) {
+        console.log(true);
+
+        setAnimateHeader(true);
+      } else setAnimateHeader(false);
+    };
+    window.addEventListener("scroll", listener);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  }, []);
   const showMobileMenuEvent = () => {
     setShowMobile(!showMobile)
   }
   return (
     <>
-      <div className='full-header'>
+      <div className={`full-header  ${animateHeader && "full-header-fixed"
+        }`}>
+
         <div className='full-header-container'>
           <div className='full-header-first'>
             <div className='logo'>
+
               <Link href="/">
                 <Image src={'/logo.png'} alt={'OGB Global'} fill sizes='100vw' />
               </Link>

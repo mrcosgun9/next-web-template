@@ -1,0 +1,29 @@
+.product-card-item {
+  @apply h-[500px] relative rounded-lg overflow-hidden shadow;
+  .product-card-item-image {
+    @apply w-full h-full;
+    .product-card-item-content {
+      @apply w-full h-full absolute p-8 flex flex-col-reverse justify-items-end align-bottom items-end;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(18, 9, 121, 0) 0%,
+        rgba(0, 0, 0, 0.7315301120448179) 100%
+      );
+      transition: 0.3s;
+      h1 {
+        @apply w-2/3 text-white font-semibold leading-9 pb-4;
+      }
+
+      &:hover {
+        @apply shadow-xl;
+        .link-text {
+          svg {
+            @apply ml-3;
+          }
+        }
+      }
+    }
+  }
+}

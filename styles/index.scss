@@ -1,5 +1,9 @@
 @import "headers/fullHeader.scss";
 @import "headers/fullSlider.scss";
+@import "products/productCard.scss";
+@import "button.scss";
+@import "mantine/tabs.scss";
+@import "mantine/form.scss";
 /* width */
 ::-webkit-scrollbar {
   @apply w-2;

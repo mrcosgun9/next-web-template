@@ -1,0 +1,14 @@
+.mantine-1bkcqmd {
+  @apply border-b-0  #{!important};
+}
+.mantine-Tabs-tab {
+  @apply font-bold text-base;
+}
+.mantine-123gri0 {
+  &:hover {
+    background: transparent;
+  }
+}
+.mantine-123gri0[data-active] {
+  @apply border-ogb-100;
+}
