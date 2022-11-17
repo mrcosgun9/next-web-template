@@ -5,10 +5,9 @@ import ContactForm from './ContactForms/ContactForm'
 function Contact() {
   return (
     <div className='w-full py-14 relative' style={{ background: "url(/images/contact.jpg)" }}>
-
       <div className='container relative z-50'>
-        <div className='w-full flex text-white gap-4 align-middle items-center'>
-          <div className='w-1/2'>
+        <div className='w-full flex flex-wrap text-white align-middle items-center'>
+          <div className='w-full md:w-1/2 md:pr-4'>
             <h1 className='font-black'>LET’S WORK TOGETHER</h1>
             <p className='pb-10'>We welcome you to contact us for more information about our products.</p>
             <div>
@@ -26,7 +25,7 @@ function Contact() {
               <div className='flex gap-1 align-middle items-center mt-1'><Mail /> info@ogbglobal.com</div>
             </div>
           </div>
-          <div className='w-1/2'>
+          <div className='w-full md:w-1/2 mt-8 md:mt-0 md:pl-4'>
             <ContactForm />
           </div>
         </div>
