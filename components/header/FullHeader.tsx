@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
-import { Menu2 } from 'tabler-icons-react';
+import { ChevronDown, Menu2 } from 'tabler-icons-react';
 import SocialMedia from '../elements/SocialMedia';
 function FullHeader() {
   const [showMobile, setShowMobile] = useState<boolean>(false);
@@ -9,8 +8,6 @@ function FullHeader() {
   useEffect(() => {
     const listener = () => {
       if (window.scrollY > 140) {
-        console.log(true);
-
         setAnimateHeader(true);
       } else setAnimateHeader(false);
     };
@@ -30,9 +27,8 @@ function FullHeader() {
         <div className='full-header-container'>
           <div className='full-header-first'>
             <div className='logo'>
-
               <Link href="/">
-                <Image src={'/logo.png'} alt={'OGB Global'} fill sizes='100vw' />
+                <img src='/logo.png' />
               </Link>
             </div>
 
@@ -41,20 +37,26 @@ function FullHeader() {
             <ul>
               <li>
                 <Link href="/">Home</Link>
-                <ul>
-                  <li>
-                    <Link href="/">Menü 1</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Menü 2</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Menü 3</Link>
-                  </li>
-                </ul>
               </li>
               <li>
                 <Link href="/">About Us</Link>
+              </li>
+              <li>
+                <Link href="/">Products <ChevronDown size={16} /></Link>
+                <ul>
+                  <li>
+                    <Link href="/">Bathroom Accessories</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Plumbing Fixtures</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Other Stainless-Steel Products</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Insulation Products</Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link href="/">Contact</Link>

@@ -4,8 +4,9 @@ import { ChevronRight } from 'tabler-icons-react';
 interface IComponent {
   src: string;
   title: string;
+  description: string;
 }
-function ProductCard({ src, title }: IComponent) {
+function ProductCard({ src, title, description }: IComponent) {
   return (
     <Link href={"/"}>
       <div className='product-card-item' >
@@ -14,6 +15,11 @@ function ProductCard({ src, title }: IComponent) {
             <div className='link link-white' >
               Hook me up
               <ChevronRight />
+            </div>
+            <div className='w-full'>
+              <p className='text-gray-400 mb-5'>
+                {description.substring(0, description.length > 60 ? 60 : description.length)}...
+              </p>
             </div>
             <div className='w-full'>
               <h1>{title}</h1>

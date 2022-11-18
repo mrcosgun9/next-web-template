@@ -12,17 +12,17 @@ function Contact() {
             <p className='pb-10'>We welcome you to contact us for more information about our products.</p>
             <div>
               <b className='font-medium'>Head Office :</b>
-              <div className='flex gap-1 align-middle items-center mt-1'><MapPin /> Yildizevler Mah. Prof. Dr. Turan Erol Cad. 2/22, 06550 Cankaya/Ankara/TURKEY</div>
+              <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><MapPin /></div> Yildizevler Mah. Prof. Dr. Turan Erol Cad. 2/22, 06550 Cankaya/Ankara/TURKEY</div>
             </div>
             <div className='w-full border-b border-gray-500 my-4'></div>
             <div>
               <b className='font-medium'>Phone :</b >
-              <div className='flex gap-1 align-middle items-center mt-1'><DeviceMobile />+90 532 5221165 (available for whatsapp)</div>
+              <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><DeviceMobile /></div>+90 532 5221165 (available for whatsapp)</div>
             </div>
             <div className='w-full border-b border-gray-500 my-4'></div>
             <div>
               <b className='font-medium'>E-mail :</b >
-              <div className='flex gap-1 align-middle items-center mt-1'><Mail /> info@ogbglobal.com</div>
+              <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><Mail /></div> info@ogbglobal.com</div>
             </div>
           </div>
           <div className='w-full md:w-1/2 mt-8 md:mt-0 md:pl-4'>

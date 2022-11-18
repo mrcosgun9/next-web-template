@@ -18,8 +18,8 @@ function FullSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider/slider-1.jpg) center center no-repeat", backgroundSize: "cover" }}>
-            <div className="slider-content">
+          <div className="slider-item" style={{ background: "url(/images/slider/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
+            <div className="slider-content-right  text-ogb-200">
               <label>Interior Decorative</label>
               <h1>HPL Panels</h1>
               <p>
@@ -32,7 +32,21 @@ function FullSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider/slider-1.jpg) center center no-repeat", backgroundSize: "cover" }}>
+          <div className="slider-item" style={{ background: "url(/images/slider/slider2.jpg) center center no-repeat", backgroundSize: "cover" }}>
+            <div className="slider-content-right text-white">
+              <label>Interior Decorative</label>
+              <h1>HPL Panels</h1>
+              <p>
+                Eco-Friendly Interior Decorative Surfaces & Panels
+                <br />
+                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper in...
+              </p>
+              <button>HOOK ME UP</button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-item" style={{ background: "url(/images/slider/slider3.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content">
               <label>Interior Decorative</label>
               <h1>HPL Panels</h1>

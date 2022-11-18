@@ -5,8 +5,7 @@ function AboutUs() {
   return (
     <div className='w-full py-12'>
       <div className='container'>
-        <h1 className='font-extrabold text-ogb-200 text-center'>ABOUT <label className='text-ogb-400'>OGBGLOBAL</label></h1>
-        <p className='text-center'>The products we have are trendy, sustainable and long-lasting furniture for your cozy living places.</p>
+        <h1 className='font-extrabold text-ogb-200 text-center'>ABOUT <label className='text-ogb-400'>OGB GLOBAL</label></h1>
         <div className='w-full flex flex-wrap mt-8'>
 
           <div className='w-full px-3 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-6'>

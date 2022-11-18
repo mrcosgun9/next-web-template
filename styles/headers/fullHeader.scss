@@ -5,7 +5,7 @@
     .full-header-first {
       @apply w-1/6;
       .logo {
-        @apply w-28 h-11 relative;
+        @apply w-24 relative;
       }
     }
     .full-header-menu {
@@ -14,13 +14,24 @@
         @apply hidden md:flex gap-6;
         li {
           @apply relative font-bold text-ogb-200;
+          a {
+            @apply flex align-middle items-center gap-2;
+            svg {
+              transition: all ease-in-out 0.2s;
+            }
+            &:hover {
+              svg {
+                @apply rotate-180;
+              }
+            }
+          }
           ul {
-            @apply absolute block w-40 py-1 bg-white shadow mt-3 border-t-2 border-ogb-100 opacity-0;
+            @apply absolute block w-56 py-1 bg-white shadow mt-3 border-t-2 border-ogb-100 opacity-0;
             visibility: hidden;
             transition: all ease-in-out 0.2s;
             transform: translateY(60px);
             li {
-              @apply w-full block py-1 px-2 text-sm border-b border-gray-100 last:border-0 hover:bg-blue-50;
+              @apply w-full block py-2 px-3 text-sm border-b border-gray-100 last:border-0 hover:bg-gray-50;
             }
           }
           &:hover {

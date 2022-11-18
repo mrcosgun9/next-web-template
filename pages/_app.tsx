@@ -3,6 +3,7 @@ import "../styles/index.scss"
 import type { AppProps } from 'next/app'
 import HomeLayout from './layout/HomeLayout'
 import { MantineProvider } from '@mantine/core';
+import { NotificationsProvider } from '@mantine/notifications';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider
@@ -13,9 +14,11 @@ export default function App({ Component, pageProps }: AppProps) {
         colorScheme: 'light',
       }}
     >
-      <HomeLayout>
-        <Component {...pageProps} />
-      </HomeLayout>
+      <NotificationsProvider position="top-right">
+        <HomeLayout>
+          <Component {...pageProps} />
+        </HomeLayout>
+      </NotificationsProvider>
     </MantineProvider>
   )
 }
