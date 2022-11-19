@@ -16,7 +16,7 @@ function OurProducts({ title }: IPage) {
         <div className='container'>
           <div className='text-center font-black text-2xl text-ogb-200'>{title}</div>
           <div className='pt-4'>
-            <Tabs defaultValue="gallery" >
+            <Tabs defaultValue="1" >
               <Tabs.List position="center">
                 <Tabs.Tab value="1">Other Stainless-Steel Products</Tabs.Tab>
                 <Tabs.Tab value="2">Insulation Products</Tabs.Tab>
@@ -24,8 +24,8 @@ function OurProducts({ title }: IPage) {
 
               <Tabs.Panel value="1" pt="xs" className='mt-3'>
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
-                  {getProducts.filter(x => x.category.id == 0).map((item, i) => {
-                    return <ProductCard key={i} src={item.img} title={item.title} description={item.description} />
+                  {getProducts.filter(x => x.category.id == 0 && x.url != "bathroom-accessories" && x.url != "plumbing-fixtures").map((item, i) => {
+                    return <ProductCard key={i} src={item.img} title={item.title} description={item.description} url={"/product/" + item.url} />
                   })}
                 </div>
               </Tabs.Panel>
@@ -33,7 +33,7 @@ function OurProducts({ title }: IPage) {
               <Tabs.Panel value="2" pt="xs">
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
                   {getProducts.filter(x => x.category.id == 1).map((item, i) => {
-                    return <ProductCard key={i} src={item.img} title={item.title} description={item.description} />
+                    return <ProductCard key={i} src={item.img} title={item.title} description={item.description} url={"/product/" + item.url} />
                   })}
                 </div>
               </Tabs.Panel>

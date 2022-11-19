@@ -5,10 +5,11 @@ interface IComponent {
   src: string;
   title: string;
   description: string;
+  url: string
 }
-function ProductCard({ src, title, description }: IComponent) {
+function ProductCard({ src, title, description, url }: IComponent) {
   return (
-    <Link href={"/"}>
+    <Link href={url}>
       <div className='product-card-item' >
         <div className='product-card-item-image' style={{ backgroundImage: "url(" + src + ")", backgroundSize: "cover", backgroundPosition: "center center" }}>
           <div className='product-card-item-content'>

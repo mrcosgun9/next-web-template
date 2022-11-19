@@ -39,27 +39,33 @@ function FullHeader() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/">About Us</Link>
+                <Link href="/page/about">About Us</Link>
               </li>
               <li>
                 <Link href="/">Products <ChevronDown size={16} /></Link>
                 <ul>
                   <li>
-                    <Link href="/">Bathroom Accessories</Link>
+                    <Link href="/product/bathroom-accessories">Bathroom Accessories</Link>
                   </li>
                   <li>
-                    <Link href="/">Plumbing Fixtures</Link>
+                    <Link href="/product/plumbing-fixtures">Plumbing Fixtures</Link>
                   </li>
                   <li>
-                    <Link href="/">Other Stainless-Steel Products</Link>
+                    <Link href="/product/shower-drains">Shower Drains</Link>
                   </li>
                   <li>
-                    <Link href="/">Insulation Products</Link>
+                    <Link href="/product/floor-drains">Floor Drains</Link>
+                  </li>
+                  <li>
+                    <Link href="/product/transition-drains">Transition Profiles</Link>
+                  </li>
+                  <li>
+                    <Link href="/product/membrane">Membrane</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link href="/">Contact</Link>
+                <Link href="/page/contact">Contact</Link>
               </li>
             </ul>
           </div>

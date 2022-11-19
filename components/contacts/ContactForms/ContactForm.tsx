@@ -1,8 +1,8 @@
 import React from 'react'
 import { useForm } from '@mantine/form';
 import { TextInput, Button, Group, Textarea } from '@mantine/core';
-import { showNotification } from '@mantine/notifications';
 import { Check, Send, X } from 'tabler-icons-react';
+import { showNotification } from '@mantine/notifications';
 function ContactForm() {
   const form = useForm({
     initialValues: {
@@ -21,22 +21,28 @@ function ContactForm() {
     }
   });
   const onSubmit = async (values: any) => {
-    await fetch('/api/mail', {
+    const res = await fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(values)
     });
-    // showNotification({
-    //   title: 'Successfully',
-    //   message: 'Message sent successfully.',
-    //   color: "teal",
-    //   icon: <Check size={16} />,
-    // });
-    // showNotification({
-    //   title: 'Failed',
-    //   message: 'Error sending message!',
-    //   color: "red",
-    //   icon: <X size={16} />,
-    // })
+    const { error, isError } = await res.json()
+    if (isError) {
+      showNotification({
+        title: 'Error',
+        message: 'Error sending message!',
+        color: "red",
+        icon: <X />
+      })
+    }
+    else {
+      showNotification({
+        title: 'Success',
+        message: 'Message sending successful.',
+        color: "teal",
+        icon: <Check />
+      })
+    }
+    form.reset();
   }
   return (
     <div>
@@ -61,7 +67,6 @@ function ContactForm() {
           </Button>
         </div>
       </form>
-
     </div>
   )
 }

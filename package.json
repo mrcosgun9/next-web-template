@@ -27,6 +27,7 @@
     "eslint-config-next": "13.0.2",
     "express": "^4.18.2",
     "next": "13.0.2",
+    "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.4.4",
@@ -34,6 +35,7 @@
     "typescript": "4.8.4"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.6",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.18",
     "sass": "^1.56.0",
