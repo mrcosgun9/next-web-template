@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 function FullSlider() {
   return (
@@ -13,8 +13,12 @@ function FullSlider() {
         pagination={{
           dynamicBullets: true,
         }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -25,7 +29,7 @@ function FullSlider() {
               <p>
                 Eco-Friendly Interior Decorative Surfaces & Panels
                 <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper in...
+                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
               </p>
               <button>HOOK ME UP</button>
             </div>
@@ -39,7 +43,7 @@ function FullSlider() {
               <p>
                 Eco-Friendly Interior Decorative Surfaces & Panels
                 <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper in...
+                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
               </p>
               <button>HOOK ME UP</button>
             </div>
@@ -53,7 +57,7 @@ function FullSlider() {
               <p>
                 Eco-Friendly Interior Decorative Surfaces & Panels
                 <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper in...
+                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
               </p>
               <button>HOOK ME UP</button>
             </div>

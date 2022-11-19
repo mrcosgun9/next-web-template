@@ -21,6 +21,7 @@ function FullHeader() {
   }
   return (
     <>
+      <div className={`${showMobile ? "header-mobile-menu-bg" : ""} `} onClick={() => showMobileMenuEvent()} ></div>
       <div className={`full-header  ${animateHeader && "full-header-fixed"
         }`}>
 
@@ -80,7 +81,40 @@ function FullHeader() {
       </div>
 
       <div className={`${showMobile ? "active" : ""} header-mobile-menu-container`}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi officia ex adipisci dolores! Aliquid provident, esse distinctio error in adipisci beatae ad delectus excepturi, vitae est quidem quod ullam similique!
+        <div className='logo'>
+          <Link onClick={() => showMobileMenuEvent()} href="/">
+            <img src='/logo.png' />
+          </Link>
+        </div>
+        <ul>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/">Home</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/page/about">About Us</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/bathroom-accessories">Bathroom Accessories</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/plumbing-fixtures">Plumbing Fixtures</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/shower-drains">Shower Drains</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/floor-drains">Floor Drains</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/transition-drains">Transition Profiles</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/product/membrane">Membrane</Link>
+          </li>
+          <li>
+            <Link onClick={() => showMobileMenuEvent()} href="/page/contact">Contact</Link>
+          </li>
+        </ul>
       </div>
 
 

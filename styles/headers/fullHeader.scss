@@ -56,9 +56,29 @@
   @apply fixed shadow-lg  bg-opacity-100;
 }
 .header-mobile-menu-container {
-  @apply fixed -right-full text-right w-4/5 bg-white h-screen py-2 px-3 z-50;
+  @apply fixed -left-full top-0 text-right w-2/3 bg-white h-screen py-2  z-50;
   transition: all 0.2s;
+  .logo {
+    @apply border-b border-gray-200 w-full text-center py-2;
+    img {
+      @apply h-14;
+    }
+  }
+  ul {
+    li {
+      @apply border-b border-gray-300 px-3 py-3;
+      a {
+        @apply flex justify-between align-middle items-center;
+      }
+      ul {
+        @apply hidden;
+      }
+    }
+  }
+}
+.header-mobile-menu-bg {
+  @apply bg-white bg-opacity-50  absolute w-full h-full z-30;
 }
 .header-mobile-menu-container.active {
-  right: 0;
+  left: 0;
 }

@@ -1,7 +1,7 @@
 .slider-item {
   @apply w-full h-screen bg-cover flex align-middle items-center justify-center;
   .slider-content {
-    @apply container h-96 flex flex-col justify-center md:justify-end items-center md:items-start;
+    @apply container h-96 px-20 flex flex-col justify-center md:justify-end items-center md:items-start;
     label,
     h1,
     p,
@@ -9,12 +9,12 @@
       opacity: 0;
     }
     label {
-      @apply font-black text-5xl text-ogb-300 mb-2;
+      @apply font-black text-center md:text-right text-5xl text-ogb-300 mb-2;
       transform: translate(0, 16vh);
       transition: all ease-in-out 0.8s;
     }
     h1 {
-      @apply text-6xl  font-semibold mb-3;
+      @apply text-6xl text-center md:text-right font-semibold mb-3;
       transform: translate(0, 16vh);
       transition: all ease-in-out 0.9s;
     }
@@ -31,7 +31,7 @@
     }
   }
   .slider-content-right {
-    @apply container h-96 flex flex-col justify-center md:justify-end items-center md:items-end;
+    @apply container h-96 px-20 flex flex-col justify-center md:justify-end items-center md:items-end;
     label,
     h1,
     p,
@@ -44,7 +44,7 @@
       transition: all ease-in-out 0.8s;
     }
     h1 {
-      @apply text-6xl font-semibold mb-3;
+      @apply text-6xl text-center md:text-right font-semibold mb-3;
       transform: translate(0, 16vh);
       transition: all ease-in-out 0.9s;
     }

@@ -5,7 +5,7 @@ import ContactForm from './ContactForms/ContactForm'
 function Contact() {
   return (
     <div className='w-full py-14 relative' style={{ background: "url(/images/contact.jpg)" }}>
-      <div className='container relative z-50'>
+      <div className='container relative z-30'>
         <div className='w-full flex flex-wrap text-white align-middle items-center'>
           <div className='w-full md:w-1/2 md:pr-4'>
             <h1 className='font-black'>LET’S WORK TOGETHER</h1>
