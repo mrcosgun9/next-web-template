@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useRouter } from 'next/router'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -7,6 +8,8 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 function FullSlider() {
+  const router = useRouter()
+
   return (
     <>
       <Swiper
@@ -14,7 +17,7 @@ function FullSlider() {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 4000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         navigation={true}
@@ -24,42 +27,36 @@ function FullSlider() {
         <SwiperSlide>
           <div className="slider-item" style={{ background: "url(/images/slider/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content-right  text-ogb-200">
-              <label>Interior Decorative</label>
-              <h1>HPL Panels</h1>
+              <label>Plumbing Fixtures</label>
               <p>
-                Eco-Friendly Interior Decorative Surfaces & Panels
-                <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
+                Customer-oriented solutions in different designs and colors shaped according to demand
               </p>
-              <button>HOOK ME UP</button>
+              <button onClick={() => router.push('/product/plumbing-fixtures')}>More</button>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-item" style={{ background: "url(/images/slider/slider2.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content-right text-white">
-              <label>Interior Decorative</label>
-              <h1>HPL Panels</h1>
+              <label>Shower Sets</label>
               <p>
-                Eco-Friendly Interior Decorative Surfaces & Panels
-                <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
+                Alternatives that will both meet the needs and add elegance to the bathrooms
               </p>
-              <button>HOOK ME UP</button>
+              <button onClick={() => router.push('/product/plumbing-fixtures')}>More</button>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider-item" style={{ background: "url(/images/slider/slider3.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content">
-              <label>Interior Decorative</label>
-              <h1>HPL Panels</h1>
+              <label>Transition Profiles</label>
+
               <p>
-                Eco-Friendly Interior Decorative Surfaces & Panels
-                <br />
-                Phenolic impregnated kraft papers pressed with high scratch resistant and hygenic decorative paper
+                Corner profiles, bordure profiles, angle profiles, technical profiles
+
+
               </p>
-              <button>HOOK ME UP</button>
+              <button onClick={() => router.push('/product/transition-drains')}>More</button>
             </div>
           </div>
         </SwiperSlide>

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Atom2, BrandHipchat, ExclamationMark, Packages, ShoppingCart, TruckLoading } from 'tabler-icons-react'
-
-function AboutUs() {
+interface IPage {
+  title?: string;
+}
+function AboutUs({ title }: IPage) {
   return (
     <div className='w-full py-12'>
       <div className='container'>
-        <h1 className='font-extrabold text-ogb-200 text-center'>ABOUT <label className='text-ogb-400'>OGB GLOBAL</label></h1>
+        <h1 className='font-extrabold text-ogb-200 text-center'>{title} <label className='text-ogb-400'>OGB GLOBAL</label></h1>
         <div className='w-full flex flex-wrap mt-8'>
           <div className='w-full px-3 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-6'>
             <div className='bg-white shadow-md rounded p-6 h-72 relative overflow-hidden'>

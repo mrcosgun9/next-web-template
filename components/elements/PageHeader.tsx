@@ -12,8 +12,8 @@ function PageHeader({ title, src }: IPage) {
         <img src={src} className="w-full" />
       </div>
       <div className='container flex flex-col align-middle items-center justify-center h-full relative z-30'>
-        <h1 className='w-full text-center font-black text-ogb-200'>{title}</h1>
-        <div className='w-full flex justify-center mt-3'>
+        <h1 className='w-full text-center font-black text-ogb-200 uppercase'>{title}</h1>
+        {/*<div className='w-full flex justify-center mt-3'>
           <Breadcrumbs separator={<Circle size={8} />}>
             <Anchor href={"/"} className='text-ogb-100'>
               HOME
@@ -22,7 +22,7 @@ function PageHeader({ title, src }: IPage) {
               {title}
             </Anchor>
           </Breadcrumbs>
-        </div>
+        </div> */}
       </div>
       <div className='page-header-bg'></div>
     </div>

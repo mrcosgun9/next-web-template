@@ -10,9 +10,8 @@ function ProductDetail({ productItem }: IPage) {
   const mobile = useMediaQuery(`(max-width: 360px)`);
   const slides = productItem.images?.map((item, i) => (
     <>
-      <div className='product-card-item' >
+      <div className='product-card-item-2' >
         <div className='product-card-item-image' style={{ backgroundImage: "url(" + item.max + ")", backgroundSize: "cover", backgroundPosition: "center center" }}>
-
         </div>
       </div>
     </>
@@ -20,8 +19,8 @@ function ProductDetail({ productItem }: IPage) {
   return (
     <>
       <Content reverse={true} product={productItem} isRoute={false} />
-      <div className='container'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8'>
+      <div className='container py-8'>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
           {slides}
         </div>
       </div>

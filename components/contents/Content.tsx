@@ -17,14 +17,14 @@ function Content({ reverse, product, isRoute = true }: IComponent) {
             <div className='rounded overflow-hidden shadow-md'>  <img src={product.img} className='w-full' /></div>
           </div>
           <div className={'w-full md:w-3/5 flex flex-col align-middle items-start justify-center ' + (reverse ? "md:pr-5" : "md:pl-5")}>
-            <h1 className='text-ogb-200 text-4xl font-extrabold pb-6'>{product.title}</h1>
+            <h1 className='text-ogb-400 text-4xl font-extrabold pb-6'>{product.title}</h1>
             <p className='pb-3 text-gray-600 leading-8'>
               {product.description}
             </p>
             {isRoute && <>
               <div className='w-full border-b-2 border-gray-100 mb-3'></div>
               <Link className='link link-primary' href={"/product/" + product.url}>
-                Hook me up
+                More
                 <ChevronRight color='#2b475c' />
               </Link></>}
 

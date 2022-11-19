@@ -23,7 +23,7 @@ function OurProducts({ title }: IPage) {
               </Tabs.List>
 
               <Tabs.Panel value="1" pt="xs" className='mt-3'>
-                <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8'>
                   {getProducts.filter(x => x.category.id == 0 && x.url != "bathroom-accessories" && x.url != "plumbing-fixtures").map((item, i) => {
                     return <ProductCard key={i} src={item.img} title={item.title} description={item.description} url={"/product/" + item.url} />
                   })}
@@ -31,7 +31,7 @@ function OurProducts({ title }: IPage) {
               </Tabs.Panel>
 
               <Tabs.Panel value="2" pt="xs">
-                <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8'>
                   {getProducts.filter(x => x.category.id == 1).map((item, i) => {
                     return <ProductCard key={i} src={item.img} title={item.title} description={item.description} url={"/product/" + item.url} />
                   })}

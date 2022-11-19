@@ -16,9 +16,9 @@ export default function Home() {
         <FullSlider />
       </div>
       <Content reverse={true} product={getProducts.find(x => x.url == "bathroom-accessories")!} />
-      <OurProducts title='OUR PRODUCTS' />
       <Content reverse={false} product={getProducts.find(x => x.url == "plumbing-fixtures")!} />
-      <AboutUs />
+      <OurProducts title='OUR PRODUCTS' />
+      <AboutUs title='ABOUT' />
       <Contact />
     </>
   )

@@ -5,7 +5,7 @@ export const products: IProduct[] = [
     content: "",
     description:
       "These products are utilized very intensely in our daily lives. They are made out of stainless steel, wood and yellow metal. Two main categories exist in these products - home-type and hotel-industrial type. Shower Caddies, Toilet Paper Holders, Bathroom Hardware, Soap and Lotion Dispensers, Toilet Brushes are considered primary  home-type accessories. Trash Cans, Standing Bins, Paper Tower Holders, Grab Bars for the Handicapped are considered primary hotel-industrial type accessories.",
-    img: "/images/products/bathroom-accessories/bathroom-accessories2.jpg",
+    img: "/images/products/bathroom-accessories/bathroom-accessories3.jpg",
     title: "Bathroom Accessories",
     url: "bathroom-accessories",
     images: [
@@ -35,7 +35,7 @@ export const products: IProduct[] = [
     content: "",
     description:
       "These products that are connected to the plumbing system and deliver water to the end-user are considered as vital devices in a house or business. They are installed in kitchens, bathrooms and showers.",
-    img: "/images/products/plumbing-fixtures/min/plumbing-fixtures1.jpg",
+    img: "/images/products/plumbing-fixtures/min/plumbing-fixtures2.jpg",
     title: "Plumbing Fixtures",
     url: "plumbing-fixtures",
     images: [
@@ -81,18 +81,10 @@ export const products: IProduct[] = [
     content: "shower-drains1.jpg",
     description:
       "Shower drains are used to discharge water. They are wider and longer than typical classic drains, enabling faster discharge avoiding accumulation. They are easily cleaned by removing their caps.",
-    img: "/images/products/shower-drains/min/shower-drains1.jpg",
+    img: "/images/products/shower-drains/shower-drains3.jpg",
     title: "Shower Drains",
     url: "shower-drains",
     images: [
-      {
-        min: "/images/products/shower-drains/min/shower-drains1.jpg",
-        max: "/images/products/shower-drains/shower-drains1.jpg",
-      },
-      {
-        min: "/images/products/shower-drains/min/shower-drains2.jpg",
-        max: "/images/products/shower-drains/shower-drains2.jpg",
-      },
       {
         min: "/images/products/shower-drains/min/shower-drains3.jpg",
         max: "/images/products/shower-drains/shower-drains3.jpg",
@@ -119,9 +111,15 @@ export const products: IProduct[] = [
     content: "",
     description:
       "These profiles are primarily used for eliminating elevation differences between surfaces and can serve as borderline between differing horizontal and vertical surfaces.",
-    img: "/images/products/shower-drains/min/shower-drains3.jpg",
+    img: "/images/products/shower-drains/shower-drains1.jpg",
     title: "Transition Profiles",
     url: "transition-drains",
+    images: [
+      {
+        min: "/images/products/shower-drains/min/shower-drains1.jpg",
+        max: "/images/products/shower-drains/shower-drains1.jpg",
+      },
+    ],
     category: {
       id: 0,
       title: "Other Stainless-Steel Products",

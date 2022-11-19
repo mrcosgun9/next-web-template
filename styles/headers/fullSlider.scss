@@ -9,7 +9,7 @@
       opacity: 0;
     }
     label {
-      @apply font-black text-center md:text-right text-5xl text-ogb-300 mb-2;
+      @apply font-black text-center md:text-right text-5xl text-ogb-400 mb-2;
       transform: translate(0, 16vh);
       transition: all ease-in-out 0.8s;
     }
@@ -39,7 +39,7 @@
       opacity: 0;
     }
     label {
-      @apply font-black text-5xl  text-center text-ogb-300 mb-2;
+      @apply font-black text-5xl  text-center text-ogb-400 mb-2;
       transform: translate(0, 16vh);
       transition: all ease-in-out 0.8s;
     }

@@ -5,7 +5,7 @@ import PageHeader from '../../components/elements/PageHeader'
 function About() {
   return (
     <>
-      <PageHeader src={"/images/slider/slider1.jpg"} title={"ABOUT"} />
+      <PageHeader src={"/images/slider/slider1.jpg"} title={"ABOUT US"} />
       <AboutUs />
     </>
   )
