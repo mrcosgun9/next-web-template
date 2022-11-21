@@ -7,7 +7,7 @@ function Contact() {
     <div className='w-full py-14 relative' style={{ background: "url(/images/contact.jpg)" }}>
       <div className='container relative z-30'>
         <div className='w-full flex flex-wrap text-white align-middle items-center'>
-          <div className='w-full md:w-1/2 md:pr-4'>
+          <div className='w-full md:w-1/2 md:pr-4 -mt-9'>
             <h1 className='font-black'>HOW TO BUY</h1>
             <p className='pb-10'>Let us know your needs. You will receive a response in the same day.</p>
             <div>

@@ -17,7 +17,9 @@ function About() {
         />
       </Head>
       <PageHeader src={"/images/slider/slider1.jpg"} title={"ABOUT US"} />
-      <AboutUs />
+      <div className='-mt-12'>
+        <AboutUs />
+      </div>
       <Contact />
     </>
   )

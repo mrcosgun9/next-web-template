@@ -31,7 +31,7 @@ function Product() {
                 content="/logo-min.ico"
               />
             </Head>
-            <PageHeader src={filterProduct.img} title={filterProduct?.title} />
+            <PageHeader src={filterProduct.img} title={filterProduct?.title} imageClass={urlName === "shower-drains" ? "opacity-50" : ""} />
             <ProductDetail productItem={filterProduct} />
             <Contact />
           </> :

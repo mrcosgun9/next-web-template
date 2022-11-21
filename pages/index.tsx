@@ -25,8 +25,8 @@ export default function Home() {
       <div className='h-screen '>
         <FullSlider />
       </div>
-      <Content reverse={true} product={getProducts.find(x => x.url == "bathroom-accessories")!} />
-      <Content reverse={false} product={getProducts.find(x => x.url == "plumbing-fixtures")!} />
+      <Content reverse={true} customClass={"pt-12"} product={getProducts.find(x => x.url == "bathroom-accessories")!} />
+      <Content reverse={false} customClass={"pb-12 pt-4"} product={getProducts.find(x => x.url == "plumbing-fixtures")!} />
       <OurProducts title='OUR PRODUCTS' />
       <AboutUs title='ABOUT' />
       <Contact />

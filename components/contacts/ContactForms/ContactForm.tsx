@@ -17,7 +17,6 @@ function ContactForm() {
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
       subject: (value) => value == "" ? 'Required' : null,
       message: (value) => value == "" ? 'Required' : null,
-      question: (value) => value == "" ? 'Required' : null,
     }
   });
   const onSubmit = async (values: any) => {
@@ -60,7 +59,7 @@ function ContactForm() {
           label="Your Message"
           withAsterisk
         />
-        <TextInput placeholder="Please answer the question" label="Please answer the question" {...form.getInputProps('question')} className="form-input mb-3" />
+        {/* <TextInput placeholder="Please answer the question" label="Please answer the question" {...form.getInputProps('question')} className="form-input mb-3" /> */}
         <div className='flex justify-end mt-8'>
           <Button radius="xs" size="md" className='primary-button' type='submit' leftIcon={<Send />}>
             Send

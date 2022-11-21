@@ -18,12 +18,13 @@ function ProductDetail({ productItem }: IPage) {
   ));
   return (
     <>
-      <Content reverse={true} product={productItem} isRoute={false} />
-      <div className='container py-8'>
+      <Content reverse={true} product={productItem} isRoute={false} customClass="py-8" />
+      {productItem.images ? <div className='container py-8'>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-8'>
           {slides}
         </div>
-      </div>
+      </div> : <></>}
+
     </>
 
   )

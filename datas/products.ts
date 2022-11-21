@@ -17,14 +17,6 @@ export const products: IProduct[] = [
         min: "/images/products/bathroom-accessories/min/bathroom-accessories2.jpg",
         max: "/images/products/bathroom-accessories/bathroom-accessories2.jpg",
       },
-      {
-        min: "/images/products/bathroom-accessories/min/bathroom-accessories3.jpg",
-        max: "/images/products/bathroom-accessories/bathroom-accessories3.jpg",
-      },
-      {
-        min: "/images/products/bathroom-accessories/min/bathroom-accessories4.jpg",
-        max: "/images/products/bathroom-accessories/bathroom-accessories4.jpg",
-      },
     ],
     category: {
       id: 0,
@@ -44,16 +36,8 @@ export const products: IProduct[] = [
         max: "/images/products/plumbing-fixtures/plumbing-fixtures1.jpg",
       },
       {
-        min: "/images/products/plumbing-fixtures/min/plumbing-fixtures2.jpg",
-        max: "/images/products/plumbing-fixtures/plumbing-fixtures2.jpg",
-      },
-      {
         min: "/images/products/plumbing-fixtures/min/plumbing-fixtures3.jpg",
         max: "/images/products/plumbing-fixtures/plumbing-fixtures3.jpg",
-      },
-      {
-        min: "/images/products/plumbing-fixtures/min/plumbing-fixtures4.jpg",
-        max: "/images/products/plumbing-fixtures/plumbing-fixtures4.jpg",
       },
       {
         min: "/images/products/plumbing-fixtures/min/plumbing-fixtures5.jpg",
@@ -64,12 +48,12 @@ export const products: IProduct[] = [
         max: "/images/products/plumbing-fixtures/plumbing-fixtures6.jpg",
       },
       {
-        min: "/images/products/plumbing-fixtures/min/plumbing-fixtures7.jpg",
-        max: "/images/products/plumbing-fixtures/plumbing-fixtures7.jpg",
-      },
-      {
         min: "/images/products/plumbing-fixtures/min/plumbing-fixtures8.jpg",
         max: "/images/products/plumbing-fixtures/plumbing-fixtures8.jpg",
+      },
+      {
+        min: "/images/products/plumbing-fixtures/min/plumbing-fixtures7.jpg",
+        max: "/images/products/plumbing-fixtures/plumbing-fixtures7.jpg",
       },
     ],
     category: {
@@ -84,12 +68,12 @@ export const products: IProduct[] = [
     img: "/images/products/shower-drains/shower-drains3.jpg",
     title: "Shower Drains",
     url: "shower-drains",
-    images: [
-      {
-        min: "/images/products/shower-drains/min/shower-drains3.jpg",
-        max: "/images/products/shower-drains/shower-drains3.jpg",
-      },
-    ],
+    // images: [
+    //   {
+    //     min: "/images/products/shower-drains/min/shower-drains3.jpg",
+    //     max: "/images/products/shower-drains/shower-drains3.jpg",
+    //   },
+    // ],
     category: {
       id: 0,
       title: "Other Stainless-Steel Products",
@@ -114,12 +98,12 @@ export const products: IProduct[] = [
     img: "/images/products/shower-drains/shower-drains1.jpg",
     title: "Transition Profiles",
     url: "transition-drains",
-    images: [
-      {
-        min: "/images/products/shower-drains/min/shower-drains1.jpg",
-        max: "/images/products/shower-drains/shower-drains1.jpg",
-      },
-    ],
+    // images: [
+    //   {
+    //     min: "/images/products/shower-drains/min/shower-drains1.jpg",
+    //     max: "/images/products/shower-drains/shower-drains1.jpg",
+    //   },
+    // ],
     category: {
       id: 0,
       title: "Other Stainless-Steel Products",
@@ -129,21 +113,22 @@ export const products: IProduct[] = [
     content: "",
     description:
       "Membrane is an insulation product that prevents passage of water. Different types of membranes are installed depending on the specific location and expected function.",
-    img: "/images/products/insulation-products/min/insulation-product1.jpg",
+    img: "/images/products/insulation-products/insulation-product1.jpg",
     title: "Membrane",
     url: "membrane",
     images: [
+      // {
+      //   min: "/images/products/insulation-products/min/insulation-product11.jpg",
+      //   max: "/images/products/insulation-products/insulation-product1.jpg",
+      // },
+
       {
-        min: "/images/products/insulation-products/min/insulation-product11.jpg",
-        max: "/images/products/insulation-products/insulation-product1.jpg",
+        min: "/images/products/insulation-products/min/insulation-product3.jpg",
+        max: "/images/products/insulation-products/insulation-product3.jpg",
       },
       {
         min: "/images/products/insulation-products/min/insulation-product2.jpg",
         max: "/images/products/insulation-products/insulation-product2.jpg",
-      },
-      {
-        min: "/images/products/insulation-products/min/insulation-product3.jpg",
-        max: "/images/products/insulation-products/insulation-product3.jpg",
       },
     ],
     category: {

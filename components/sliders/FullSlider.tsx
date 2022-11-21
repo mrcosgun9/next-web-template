@@ -6,12 +6,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { useElementSize } from "@mantine/hooks";
 
 function FullSlider() {
   const router = useRouter()
-
+  const { ref, width, height } = useElementSize();
   return (
-    <>
+    <div ref={ref} >
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -25,7 +26,7 @@ function FullSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
+          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider1.jpg) center center no-repeat", backgroundSize: "container" }}>
             <div className="slider-content-right  text-ogb-200">
               <label>Plumbing Fixtures</label>
               <p>
@@ -36,7 +37,7 @@ function FullSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider/slider2.jpg) center center no-repeat", backgroundSize: "cover" }}>
+          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider2.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content-right text-white">
               <label>Shower Sets</label>
               <p>
@@ -47,7 +48,7 @@ function FullSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider/slider3.jpg) center center no-repeat", backgroundSize: "cover" }}>
+          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider3.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content">
               <label>Transition Profiles</label>
 
@@ -61,7 +62,7 @@ function FullSlider() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   )
 }
 

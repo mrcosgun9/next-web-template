@@ -13,10 +13,10 @@ function ProductCard({ src, title, description, url }: IComponent) {
       <div className='product-card-item' >
         <div className='product-card-item-image' style={{ backgroundImage: "url(" + src + ")", backgroundSize: "cover", backgroundPosition: "center center" }}>
           <div className='product-card-item-content'>
-            <div className='link link-white' >
+            {/* <div className='link link-white' >
               More
               <ChevronRight />
-            </div>
+            </div> */}
             <div className='w-full'>
               {/* <p className='text-gray-400 mb-5'>
                 {description.substring(0, description.length > 60 ? 60 : description.length)}...

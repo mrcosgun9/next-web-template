@@ -24,7 +24,6 @@ function FullHeader() {
       <div className={`${showMobile ? "header-mobile-menu-bg" : ""} `} onClick={() => showMobileMenuEvent()} ></div>
       <div className={`full-header  ${animateHeader && "full-header-fixed"
         }`}>
-
         <div className='full-header-container'>
           <div className='full-header-first'>
             <div className='logo'>
@@ -53,7 +52,7 @@ function FullHeader() {
                   </li>
                   <li>
                     <div className='flex justify-between align-middle items-center cursor-pointer'>
-                      Other Stainless-Steel <ChevronRight size={14} />
+                      Other Stainless-Steels <ChevronRight size={14} />
                     </div>
                     <ul className='header-menu-last'>
                       <li>

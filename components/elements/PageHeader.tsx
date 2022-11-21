@@ -3,13 +3,14 @@ import { Breadcrumbs, Anchor } from '@mantine/core'
 import { Circle } from 'tabler-icons-react'
 interface IPage {
   title: string;
-  src: string
+  src: string;
+  imageClass?: string;
 }
-function PageHeader({ title, src }: IPage) {
+function PageHeader({ title, src, imageClass }: IPage) {
   return (
     <div className='page-header'>
       <div className='w-full h-full absolute top-0 left-0 flex align-middle items-center'>
-        <img src={src} className="w-full" />
+        <img src={src} className={"w-full " + imageClass} />
       </div>
       <div className='container flex flex-col align-middle items-center justify-center h-full relative z-30'>
         <h1 className='w-full text-center font-black text-ogb-200 uppercase'>{title}</h1>
