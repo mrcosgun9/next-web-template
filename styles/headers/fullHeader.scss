@@ -25,13 +25,26 @@
               }
             }
           }
-          ul {
+          .header-menu-second {
             @apply absolute block w-56 py-1 bg-white shadow mt-3 border-t-2 border-ogb-100 opacity-0;
             visibility: hidden;
             transition: all ease-in-out 0.2s;
             transform: translateY(60px);
             li {
               @apply w-full block py-2 px-3 text-sm border-b border-gray-100 last:border-0 hover:bg-gray-50;
+              .header-menu-last {
+                @apply absolute block w-56 -right-full bg-white top-3 opacity-0 shadow-lg  border-t-2 border-ogb-100;
+                visibility: hidden;
+                transition: all ease-in-out 0.2s;
+                transform: translateY(60px);
+              }
+              &:hover {
+                .header-menu-last {
+                  @apply opacity-100;
+                  visibility: visible;
+                  transform: translateY(-10px);
+                }
+              }
             }
           }
           &:hover {

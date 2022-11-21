@@ -4,6 +4,7 @@ import PageHeader from '../../components/elements/PageHeader'
 import { products } from '../../datas/products'
 import { IProduct } from '../../types/ContentType';
 import ProductDetail from '../../components/products/productDetails/ProductDetail';
+import Contact from '../../components/contacts/Contact';
 function Product() {
   const [filterProduct, setFilterProduct] = useState<IProduct | null>(null);
   const router = useRouter()
@@ -22,6 +23,7 @@ function Product() {
           <>
             <PageHeader src={filterProduct.img} title={filterProduct?.title} />
             <ProductDetail productItem={filterProduct} />
+            <Contact />
           </> :
           <div>404</div>
       }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
-import { ChevronDown, Menu2 } from 'tabler-icons-react';
+import { ChevronDown, ChevronRight, Menu2 } from 'tabler-icons-react';
 import SocialMedia from '../elements/SocialMedia';
 function FullHeader() {
   const [showMobile, setShowMobile] = useState<boolean>(false);
@@ -44,7 +44,7 @@ function FullHeader() {
               </li>
               <li>
                 <Link href="/">Products <ChevronDown size={16} /></Link>
-                <ul>
+                <ul className='header-menu-second'>
                   <li>
                     <Link href="/product/bathroom-accessories">Bathroom Accessories</Link>
                   </li>
@@ -52,6 +52,35 @@ function FullHeader() {
                     <Link href="/product/plumbing-fixtures">Plumbing Fixtures</Link>
                   </li>
                   <li>
+                    <div className='flex justify-between align-middle items-center cursor-pointer'>
+                      Other Stainless-Steel <ChevronRight size={14} />
+                    </div>
+                    <ul className='header-menu-last'>
+                      <li>
+                        <Link href="/product/shower-drains">Shower Drains</Link>
+                      </li>
+                      <li>
+                        <Link href="/product/floor-drains">Floor Drains
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/product/transition-drains">Transition Profiles
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div className='flex justify-between align-middle items-center cursor-pointer'>
+                      Insulation Products <ChevronRight size={14} />
+                    </div>
+                    <ul className='header-menu-last'>
+                      <li>
+                        <Link href="/product/membrane">Membrane</Link>
+                      </li>
+
+                    </ul>
+                  </li>
+                  {/* <li>
                     <Link href="/product/shower-drains">Shower Drains</Link>
                   </li>
                   <li>
@@ -62,7 +91,7 @@ function FullHeader() {
                   </li>
                   <li>
                     <Link href="/product/membrane">Membrane</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li>

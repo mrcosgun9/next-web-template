@@ -8,8 +8,8 @@ function Contact() {
       <div className='container relative z-30'>
         <div className='w-full flex flex-wrap text-white align-middle items-center'>
           <div className='w-full md:w-1/2 md:pr-4'>
-            <h1 className='font-black'>LET’S WORK TOGETHER</h1>
-            <p className='pb-10'>We welcome you to contact us for more information about our products.</p>
+            <h1 className='font-black'>HOW TO BUY</h1>
+            <p className='pb-10'>Let us know your needs. You will receive a response in the same day.</p>
             <div>
               <b className='font-medium'>Head Office :</b>
               <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><MapPin /></div> Yildizevler Mah. Prof. Dr. Turan Erol Cad. 2/22, 06550 Cankaya/Ankara/TURKEY</div>

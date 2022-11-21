@@ -25,7 +25,7 @@ export default async function handler(
   try {
     await transporter.sendMail({
       from: "info@ogbglobal.com",
-      to: "mrcosgun9@gmail.com",
+      to: "info@ogbglobal.com",
       subject: `İletişim formundan ${data.name} tarafından iletiniz bulunmaktadır.`,
       html: `<p><strong>İsim Soyisim: </strong> ${data.name}</p>
         <p><strong>Email: </strong> ${data.email}</p>
