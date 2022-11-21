@@ -1,4 +1,5 @@
 
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import AboutUs from '../components/abouts/AboutUs';
@@ -12,6 +13,15 @@ export default function Home() {
   const getProducts = products;
   return (
     <>
+      <Head>
+        <title>
+          OGB GLOBAL
+        </title>
+        <meta
+          property="og:image"
+          content="/logo-min.ico"
+        />
+      </Head>
       <div className='h-screen '>
         <FullSlider />
       </div>

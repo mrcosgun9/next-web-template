@@ -5,6 +5,7 @@ import { products } from '../../datas/products'
 import { IProduct } from '../../types/ContentType';
 import ProductDetail from '../../components/products/productDetails/ProductDetail';
 import Contact from '../../components/contacts/Contact';
+import Head from 'next/head';
 function Product() {
   const [filterProduct, setFilterProduct] = useState<IProduct | null>(null);
   const router = useRouter()
@@ -21,6 +22,15 @@ function Product() {
       {
         filterProduct ?
           <>
+            <Head>
+              <title>
+                OGB GLOBAL | {filterProduct.title}
+              </title>
+              <meta
+                property="og:image"
+                content="/logo-min.ico"
+              />
+            </Head>
             <PageHeader src={filterProduct.img} title={filterProduct?.title} />
             <ProductDetail productItem={filterProduct} />
             <Contact />
