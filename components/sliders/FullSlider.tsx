@@ -25,17 +25,7 @@ function FullSlider() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
-            <div className="slider-content-right  text-ogb-200">
-              <label>Plumbing Fixtures</label>
-              <p>
-                Customer-oriented solutions in different designs and colors shaped according to demand
-              </p>
-              <button onClick={() => router.push('/product/plumbing-fixtures')}>More</button>
-            </div>
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider2.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content-right text-white">
@@ -53,11 +43,20 @@ function FullSlider() {
               <label>Transition Profiles</label>
 
               <p>
-                Corner profiles, bordure profiles, angle profiles, technical profiles
-
-
+                Different types of membranes are installed depending on the specific location and expected function.
               </p>
               <button onClick={() => router.push('/product/transition-drains')}>More</button>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
+            <div className="slider-content-right  text-white">
+              <label>Membrane</label>
+              <p>
+                Customer-oriented solutions in different designs and colors shaped according to demand
+              </p>
+              <button onClick={() => router.push('/product/membrane')}>More</button>
             </div>
           </div>
         </SwiperSlide>

@@ -23,7 +23,9 @@ function ProductCard({ src, title, description, url }: IComponent) {
               </p> */}
             </div>
             <div className='w-full'>
-              <h1 className='bg-ogb-400 text-ogb-200 block px-3 py-2 rounded-md '>{title}</h1>
+              <div className='bg-ogb-400/20 text-white px-4 py-2 rounded-md text-xl m-0 flex align-middle items-center justify-between hover:bg-ogb-400/50'>{title}
+                <ChevronRight />
+              </div>
             </div>
           </div>
         </div>
