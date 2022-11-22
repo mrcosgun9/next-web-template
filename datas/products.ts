@@ -27,7 +27,7 @@ export const products: IProduct[] = [
     content: "",
     description:
       "These products that are connected to the plumbing system and deliver water to the end-user are considered as vital devices in a house or business. They are installed in kitchens, bathrooms and showers.",
-    img: "/images/products/plumbing-fixtures/min/plumbing-fixtures2.jpg",
+    img: "/images/products/plumbing-fixtures/plumbing-fixtures5.jpg",
     title: "Plumbing Fixtures",
     url: "plumbing-fixtures",
     images: [
@@ -38,10 +38,6 @@ export const products: IProduct[] = [
       {
         min: "/images/products/plumbing-fixtures/min/plumbing-fixtures3.jpg",
         max: "/images/products/plumbing-fixtures/plumbing-fixtures3.jpg",
-      },
-      {
-        min: "/images/products/plumbing-fixtures/min/plumbing-fixtures5.jpg",
-        max: "/images/products/plumbing-fixtures/plumbing-fixtures5.jpg",
       },
       {
         min: "/images/products/plumbing-fixtures/min/plumbing-fixtures6.jpg",
