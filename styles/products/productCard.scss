@@ -3,7 +3,7 @@
   .product-card-item-image {
     @apply w-full h-full;
     .product-card-item-content {
-      @apply w-full h-full absolute p-8 flex flex-col-reverse justify-items-end align-bottom items-end;
+      @apply w-full h-full absolute p-4 flex flex-col-reverse justify-items-end align-bottom items-end;
       background: rgb(2, 0, 36);
       background: linear-gradient(
         180deg,

@@ -23,7 +23,7 @@ function ProductCard({ src, title, description, url }: IComponent) {
               </p> */}
             </div>
             <div className='w-full'>
-              <h1>{title}</h1>
+              <h1 className='bg-ogb-400 text-ogb-200 block px-3 py-2 rounded-md '>{title}</h1>
             </div>
           </div>
         </div>
