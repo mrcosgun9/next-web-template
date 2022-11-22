@@ -109,7 +109,7 @@ function FullHeader() {
       </div>
 
       <div className={`${showMobile ? "active" : ""} header-mobile-menu-container`}>
-        <div className='logo'>
+        <div className='logo ml-8'>
           <Link onClick={() => showMobileMenuEvent()} href="/">
             <img src='/logo.png' />
           </Link>

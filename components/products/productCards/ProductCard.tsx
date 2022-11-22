@@ -23,7 +23,7 @@ function ProductCard({ src, title, description, url }: IComponent) {
               </p> */}
             </div>
             <div className='w-full'>
-              <div className='bg-ogb-400/20 text-white px-4 py-2 rounded-md text-xl m-0 flex align-middle items-center justify-between hover:bg-ogb-400/50'>{title}
+              <div className=' text-white px-4 py-2 rounded-md text-xl m-0 flex align-middle items-center justify-between'>{title}
                 <ChevronRight />
               </div>
             </div>
