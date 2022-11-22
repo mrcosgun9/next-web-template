@@ -79,7 +79,7 @@ export const products: IProduct[] = [
     content: "",
     description:
       "Floor drains are used to transfer water that is accumulated at a specific point into a plumbing inlet. They are typically installed in house and office kitchens, restaurant or other industrial kitchens and laundry facilities.",
-    img: "/images/products/shower-drains/min/shower-drains2.jpg",
+    img: "/images/products/shower-drains/shower-drains2.jpg",
     title: "Floor Drains",
     url: "floor-drains",
     category: {
