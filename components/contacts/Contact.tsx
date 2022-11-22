@@ -31,7 +31,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className='w-full h-full bg-gray-900 bg-opacity-50 absolute top-0 right-0'></div>
+      <div className='w-full h-full bg-gray-800/60 absolute top-0 right-0'></div>
     </div >
   )
 }
