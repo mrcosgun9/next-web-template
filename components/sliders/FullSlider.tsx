@@ -43,7 +43,7 @@ function FullSlider() {
               <label>Transition Profiles</label>
 
               <p>
-                Different types of membranes are installed depending on the specific location and expected function.
+                Customer-oriented solutions in different designs and colors shaped according to demand
               </p>
               <button onClick={() => router.push('/product/transition-drains')}>More</button>
             </div>
@@ -54,7 +54,8 @@ function FullSlider() {
             <div className="slider-content-right  text-white">
               <label>Membrane</label>
               <p>
-                Customer-oriented solutions in different designs and colors shaped according to demand
+                Different types of membranes are installed depending on the specific location and expected function.
+
               </p>
               <button onClick={() => router.push('/product/membrane')}>More</button>
             </div>
