@@ -9,8 +9,8 @@ function Contact() {
         <div className='w-full flex flex-wrap text-white align-middle items-center'>
           <div className='w-full md:w-1/2 md:pr-4 -mt-9'>
             <h1 className='font-black'>HOW TO BUY</h1>
-            <p className='pb-10'>Let us know your needs. You will receive a response in the same day.</p>
-            <div>
+            <p className=' border-b border-gray-500'>Let us know your needs. You will receive a response in the same day.</p>
+            <div className='mt-10'>
               <b className='font-medium'>Head Office :</b>
               <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><MapPin /></div> Yildizevler Mah. Prof. Dr. Turan Erol Cad. 2/22, 06550 Cankaya/Ankara/TURKEY</div>
             </div>
@@ -24,6 +24,7 @@ function Contact() {
               <b className='font-medium'>E-mail :</b >
               <div className='flex gap-1 align-middle items-center mt-1'><div className='w-8'><Mail /></div> info@ogbglobal.com</div>
             </div>
+            <div className='w-full border-b border-gray-500 my-4'></div>
           </div>
           <div className='w-full md:w-1/2 mt-8 md:mt-0 md:pl-4'>
             <ContactForm />

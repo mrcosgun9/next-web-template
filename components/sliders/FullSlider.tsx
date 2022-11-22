@@ -26,7 +26,7 @@ function FullSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider1.jpg) center center no-repeat", backgroundSize: "container" }}>
+          <div className="slider-item" style={{ background: "url(/images/slider" + (width < 450 ? "/mobile" : "") + "/slider1.jpg) center center no-repeat", backgroundSize: "cover" }}>
             <div className="slider-content-right  text-ogb-200">
               <label>Plumbing Fixtures</label>
               <p>
